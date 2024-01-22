@@ -1,29 +1,46 @@
 
 export default defineNuxtConfig({
-  modules: [
-    '@vueuse/nuxt',
-    '@nuxtjs/color-mode',
-  ],
+    modules: [
+        '@vueuse/nuxt',
+        '@element-plus/nuxt',
+        "@nuxtjs/tailwindcss",
+        'nuxt-icon'
+    ],
+    elementPlus: { /** Options */ },
+    tailwindcss: {
+        // Options
+    },
+    nuxtIcon: {
+        size: '100px', // default <Icon> size applied
+        class: 'icon', // default <Icon> class applied
+        aliases: {
+            'nuxt': 'logos:nuxt-icon',
+        }
+    },
 
-
-
-//   app: {
-//     head: {
-//       viewport: 'width=device-width,initial-scale=1',
-//       link: [
-//         { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-//         { rel: 'icon', type: 'image/svg+xml', href: '/nuxt.svg' },
-//         { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-//       ],
-//       meta: [
-//         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-//         { name: 'description', content: appDescription },
-//         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
-//       ],
-//     },
-//   },
-
-  devtools: {
-    enabled: true,
-  },
+    app: {
+        head: {
+            viewport: 'width=device-width,initial-scale=1',
+            meta: [
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+            ],
+            link: [
+                { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+            ],
+            script: [
+                ...(process.env.NODE_ENV === 'production' ? [
+                    // Google Analytics Code
+                    {
+                        src: "https://www.googletagmanager.com/gtag/js?id=G-BZPGKTQMD9",
+                        async: true,
+                    },
+                    { src: "/js/analytics.js" }
+                ]
+                    : [])
+            ]
+        }
+    },
+    devtools: {
+        enabled: true,
+    }
 })
