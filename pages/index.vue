@@ -1,7 +1,8 @@
 <template>
     <section class="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
         <div class="absolute inset-0">
-            <el-image class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left" src="/6.png" lazy alt="Style photo" />
+            <!-- <el-image class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left" src="/1.jpg" lazy alt="Style photo" /> -->
+            <img class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left" src="/1.jpg" alt="Style photo">
         </div>
 
         <div class="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
@@ -22,7 +23,7 @@
         </div>
     </section>
 
-    <iframe src="https://tencentarc-photomaker.hf.space" ref="iframe" class="iframe" id="iframe"></iframe>
+    <iframe src="https://tencentarc-photomaker.hf.space" scrolling="no" ref="iframe" class="iframe" id="iframe"></iframe>
 
     <el-row>
         <el-col class="mt-8" :offset="3" :span="18">
