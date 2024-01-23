@@ -31,7 +31,7 @@ export default defineNuxtConfig({
                 ...(process.env.NODE_ENV === 'production' ? [
                     // Google Analytics Code
                     {
-                        src: "https://www.googletagmanager.com/gtag/js?id=G-BZPGKTQMD9",
+                        src: "https://www.googletagmanager.com/gtag/js?id=G-ZB4EQ5DYD5",
                         async: true,
                     },
                     { src: "/js/analytics.js" }
