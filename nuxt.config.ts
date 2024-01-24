@@ -25,7 +25,7 @@ export default defineNuxtConfig({
                 { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             ],
             link: [
-                { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
+                { rel: 'icon', href: '/favicon.ico' },
             ],
             script: [
                 ...(process.env.NODE_ENV === 'production' ? [

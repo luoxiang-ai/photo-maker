@@ -132,8 +132,7 @@ useSeoMeta({
     description: 'Style Photo allows you to generate photos with different stylistic elements with just one click based on the images you upload. It not only produces realistic human photos but also stylizes them while preserving ID attributes.',
     ogDescription: 'Style Photo allows you to generate photos with different stylistic elements with just one click based on the images you upload. It not only produces realistic human photos but also stylizes them while preserving ID attributes.',
     ogImage: '/favicon.ico',
-    twitterCard: '/favicon.ico',
-    keywords: ''
+    twitterCard: '/favicon.ico'
 });
 
 const scrollTo = () => {
