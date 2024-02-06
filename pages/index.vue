@@ -18,7 +18,7 @@
 
                 <div class="mt-8 lg:mt-12">
                     <div class="flex flex-col items-center sm:flex-row sm:justify-center">
-                        <el-button size="large" type="primary" @click="scrollTo">Quick start</el-button>
+                        <el-button size="large" type="primary" @click="scrollTo">Give it a try</el-button>
                     </div>
                 </div>
             </div>
@@ -135,6 +135,7 @@ useSeoMeta({
     twitterCard: '/favicon.ico'
 });
 
+console.log("sdfsfs");
 const scrollTo = () => {
     const element = document.getElementById("iframe");
     if (element) {

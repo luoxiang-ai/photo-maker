@@ -4,7 +4,8 @@ export default defineNuxtConfig({
         '@vueuse/nuxt',
         '@element-plus/nuxt',
         "@nuxtjs/tailwindcss",
-        'nuxt-icon'
+        'nuxt-icon',
+        '@nuxt/content'
     ],
     elementPlus: { /** Options */ },
     tailwindcss: {
@@ -16,6 +17,9 @@ export default defineNuxtConfig({
         aliases: {
             'nuxt': 'logos:nuxt-icon',
         }
+    },
+    content: {
+        // ... options
     },
 
     app: {
